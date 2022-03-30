@@ -7,21 +7,10 @@ public class Main {
     Horse horse = new Horse("Speed", 1, 1000.0d);
     MotorBike motorbike = new MotorBike("Harley",1,2350.0d);
     Vehicle[] vehicles = {car,truck,horse,motorbike};
-    printCalcTotals(vehicles);
-        printAllVehicleNames(vehicles);
-        horse.printExperience();
-        motorbike.printExperience();
+    morevehicles.Vehicle.printCalcTotals(vehicles);
+    morevehicles.Vehicle.printAllVehicleNames(vehicles);
+    horse.printExperience();
+    motorbike.printExperience();
     //Vehicle.printVehicleName(car);
-    }
-
-    public static void printCalcTotals(Vehicle[] vehicles){
-        for (Vehicle v: vehicles){
-            v.calcTotal();
-        }
-    }
-    public static void printAllVehicleNames(Vehicle[] vehicles){
-        for (Vehicle v: vehicles){
-            System.out.println(v.getName());
-        }
     }
 }

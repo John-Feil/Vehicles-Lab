@@ -24,4 +24,14 @@ public abstract class Vehicle extends Product{
     public void setPrice(double price) {
         this.price = price;
     }
+    public static void printCalcTotals(Vehicle[] vehicles){
+        for (Vehicle v: vehicles){
+            v.calcTotal();
+        }
+    }
+    public static void printAllVehicleNames(Vehicle[] vehicles){
+        for (Vehicle v: vehicles){
+            System.out.println(v.getName());
+        }
+    }
 }
