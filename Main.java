@@ -11,6 +11,6 @@ public class Main {
     morevehicles.Vehicle.printAllVehicleNames(vehicles);
     horse.printExperience();
     motorbike.printExperience();
-    //Vehicle.printVehicleName(car);
+    Vehicle.printVehicleName(car);
     }
 }
