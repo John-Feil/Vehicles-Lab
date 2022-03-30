@@ -1,6 +1,6 @@
 package morevehicles;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle implements ITowable{
     public Car(String name, int qty, double price){
         this.setName(name);
         this.setQty(qty);
@@ -9,5 +9,10 @@ public class Car extends Vehicle{
     @Override
     public void calcTotal() {
         System.out.println(getPrice() * getQty());
+    }
+
+    @Override
+    public boolean canBeTowed() {
+        return true;
     }
 }

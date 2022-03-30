@@ -1,6 +1,6 @@
 package morevehicles;
 
-public class MotorBike extends Vehicle implements IRideable{
+public class MotorBike extends Vehicle implements IRideable,ITowable{
     public MotorBike(String name, int qty, double price){
         this.setName(name);
         this.setQty(qty);
@@ -14,5 +14,10 @@ public class MotorBike extends Vehicle implements IRideable{
     @Override
     public void calcTotal() {
         System.out.println(getPrice() * getQty());
+    }
+
+    @Override
+    public boolean canBeTowed() {
+        return true;
     }
 }
